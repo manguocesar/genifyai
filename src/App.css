@@ -1,38 +1,46 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes keyframe {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
+}
+
+.right {
+  margin-right: 40px;
+}
+.left {
+  margin-left: 40px;
+}
+
+.vertical-timeline-element-content {
+  box-shadow: 0 0em 0em 0 rgba(0, 0, 0, 0.25), 0em 0em 0em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 0em 0em !important;
+}
+.vertical-timeline--two-columns .vertical-timeline-element-icon {
+  width: 20px !important;
+  height: 20px !important;
+  left: 51.7% !important;
+}
+.vertical-timeline-element-icon {
+  position: absolute;
+  top: 7px !important;
+  left: 0;
+
+  border-radius: 50%;
+  /* background-color: blue !important; */
+  -webkit-box-shadow: 0 0 0 1px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 0px 0 0px rgba(0, 0, 0, 0.05) !important;
+  box-shadow: 0 0 0 3px #fff, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 0px 0 3px rgba(0, 0, 0, 0.05) !important;
+}
+.vertical-timeline-element {
+  margin: 2em 0 !important;
+}
+.vertical-timeline.vertical-timeline--two-columns {
+  width: 100% !important;
+}
+.vertical-timeline {
+  padding: 0em 0 !important;
 }
